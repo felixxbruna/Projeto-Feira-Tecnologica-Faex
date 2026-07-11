@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasy Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">TASY MOVIE</div>
+        <nav>
+            <a href="#">TODOS</a>
+            <a href="#">FILMES</a>
+            <a href="#">PERFIL</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay">
+            <div class="hero-text">
+                <p class="small-title">SOBRE</p>
+                <h1>HARRY POTTER - E A PEDRA FILOSOFAL</h1>
+                <p class="desc">
+                    Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys.
+                    Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa
+                    escola especializada em formar jovens bruxos...
+                </p>
+
+                <div class="hero-btn-area">
+                    <a href="https://pt.wikipedia.org/wiki/Harry_Potter_e_a_Pedra_Filosofal" target="_blank">
+                        <button class="btn">WIKIPEDIA</button>
+                    </a>
+
+                    <button class="btn" onclick="mostrarTrailer()">TRAILER</button>
+                </div>
+
+                <!-- Trailer Harry Potter -->
+                <div id="trailer-box">
+                    <button class="close-btn" onclick="fecharTrailer()">X</button>
+                    <video id="trailer-video" controls>
+                        <source
+                            src="../trabalho_feira/Harry Potter e a Pedra Filosofal (2001) _ Trailer [Legendado].mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="category-menu">
+                    <a>AVENTURA</a>
+                    <a>ROMANCE</a>
+                    <a>FANTASIA</a>
+                    <a>AÇÃO</a>
+                    <a class="active">TERROR</a>
+                    <a>COMEDIA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOVIES -->
+    <section class="movie-section">
+        <div class="section-header">
+            <span>RECOMENDADOS | FILMES DE TERROR</span>
+            <span class="select">SELECIONAR TUDO</span>
+        </div>
+
+        <div class="movie-carousel">
+            <!--TERROR-->
+            <img src="img/IMG-TERROR1.jpg" class="movie-card" data-category="TERROR">
+            <img src="img/IMG-TERROR2.jpg" class="movie-card" data-category="TERROR">
+            <img src="img/IMG-TERROR3.jpg" class="movie-card" data-category="TERROR">
+            <img src="img/img-terror4.jpg" class="movie-card" data-category="TERROR">
+            <img src="img/img-terror5.jpg" class="movie-card" data-category="TERROR">
+            <img src="img/img-terror 5.jpg" class="movie-card" data-category="TERROR">
+
+            <!--ROMANCE-->
+            <img src="img_romance/img1.jpg" class="movie-card" data-category="ROMANCE">
+            <img src="img_romance/img2.jpg" class="movie-card" data-category="ROMANCE">
+            <img src="img_romance/img3.jpg" class="movie-card" data-category="ROMANCE">
+            <img src="img_romance/img4.webp" class="movie-card" data-category="ROMANCE">
+            <img src="img_romance/img5.avif" class="movie-card" data-category="ROMANCE">
+            <img src="img_romance/img6.jpg" class="movie-card" data-category="ROMANCE">
+           
+            <!--AÇAO-->
+            <img src="img_acao/img1.jpg" class="movie-card" data-category="AÇÃO">
+            <img src="img_acao/img2.jpg" class="movie-card" data-category="AÇÃO">
+            <img src="img_acao/img3.jpg" class="movie-card" data-category="AÇÃO">
+            <img src="img_acao/img4.jpg" class="movie-card" data-category="AÇÃO">
+            <img src="img_acao/img5.jpg" class="movie-card" data-category="AÇÃO">
+            <img src="img_acao/img6.jpg" class="movie-card" data-category="AÇÃO">
+
+            <!--COMEDIA -->
+            <img src="img_comedia/img1.jpg" class="movie-card" data-category="COMEDIA">
+            <img src="img_comedia/img2.jpg" class="movie-card" data-category="COMEDIA">
+            <img src="img_comedia/img3.jpg" class="movie-card" data-category="COMEDIA">
+            <img src="img_comedia/img4.jpg" class="movie-card" data-category="COMEDIA">
+            <img src="img_comedia/img5.jpg" class="movie-card" data-category="COMEDIA">
+            <img src="img_comedia/img6.jpg" class="movie-card" data-category="COMEDIA">
+
+            <!--Aventura-->
+            <img src="img_aventura/img1.jpg" class="movie-card" data-category="AVENTURA">
+            <img src="img_aventura/img2.jpg" class="movie-card" data-category="AVENTURA">
+            <img src="img_aventura/img3.jpg" class="movie-card" data-category="AVENTURA">
+            <img src="img_aventura/img4.jpg" class="movie-card" data-category="AVENTURA">
+            <img src="img_aventura/img5.webp" class="movie-card" data-category="AVENTURA">
+            <img src="img_aventura/img6.jpg" class="movie-card" data-category="AVENTURA">
+
+            <!--FANTASIA-->
+            <img src="img_fan/img1.jpg" class="movie-card" data-category="FANTASIA">
+            <img src="img_fan/img2.jpg" class="movie-card" data-category="FANTASIA">
+            <img src="img_fan/img3.jpg" class="movie-card" data-category="FANTASIA">
+            <img src="img_fan/img4.jpg" class="movie-card" data-category="FANTASIA">
+            <img src="img_fan/img5.jpg" class="movie-card" data-category="FANTASIA">
+            <img src="img_fan/img6.jpg" class="movie-card" data-category="FANTASIA">
+
+        </div>
+    </section>
+
+    <!-- INFO SECTION ARCANE -->
+    <section class="info">
+
+        <div class="info-left">
+            <h3>BEM AVALIADOS</h3>
+            <h1>ARCANE</h1>
+            <p class="year"> 2 TEMPORADAS • 4.6 / 5</p>
+
+            <p class="short">
+                Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun...
+            </p>
+
+            <div class="info-buttons">
+                <button class="btn">AVALIAÇÕES</button>
+                <button class="btn">VER MAIS</button>
+            </div>
+        </div>
+
+        <div class="info-right">
+            <h3>TOP TRENDING</h3>
+            <button class="btn2" onclick="mostrarTrailer2()"></button>
+        </div>
+
+        <!-- Trailer Arcane -->
+        <div id="trailer-box2">
+            <button class="close-btn" onclick="fecharTrailer2()">X</button>
+            <video id="trailer-video2" controls>
+                <source src="../trabalho_feira/Arcane _ Trailer oficial _ Netflix.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <!-- SCRIPTS -->
+    <script>
+        function mostrarTrailer() {
+            const box = document.getElementById("trailer-box");
+            const video = document.getElementById("trailer-video");
+            box.style.display = "block";
+            video.play();
+        }
+
+        function fecharTrailer() {
+            const box = document.getElementById("trailer-box");
+            const video = document.getElementById("trailer-video");
+            box.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        }
+
+        function mostrarTrailer2() {
+            const box = document.getElementById("trailer-box2");
+            const video = document.getElementById("trailer-video2");
+            box.style.display = "block";
+            video.play();
+        }
+
+        function fecharTrailer2() {
+            const box = document.getElementById("trailer-box2");
+            const video = document.getElementById("trailer-video2");
+            box.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        }
+
+        /* CATEGORIAS COM UNDERLINE */
+        const categorias = document.querySelectorAll(".category-menu a");
+        categorias.forEach(cat => {
+            cat.addEventListener("click", () => {
+                categorias.forEach(c => c.classList.remove("active"));
+                cat.classList.add("active");
+            });
+        });
+
+        /* SELECIONAR TUDO */
+        const btnSelectAll = document.querySelector(".select");
+        const cards = document.querySelectorAll(".movie-card");
+
+        btnSelectAll.addEventListener("click", () => {
+            cards.forEach(card => card.classList.toggle("selected"));
+        });
+        categorias.forEach(cat => {
+            cat.addEventListener("click", () => {
+                const categoriaSelecionada = cat.textContent.trim().toUpperCase();
+
+                categorias.forEach(c => c.classList.remove("active"));
+                cat.classList.add("active");
+
+                const filmes = document.querySelectorAll(".movie-card");
+
+                filmes.forEach(filme => {
+                    const categoriaFilme = filme.getAttribute("data-category").toUpperCase();
+
+                    if (categoriaSelecionada === categoriaFilme || categoriaSelecionada === "TODOS") {
+                        filme.style.display = "block";
+                    } else {
+                        filme.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
